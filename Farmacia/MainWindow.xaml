@@ -1,0 +1,32 @@
+﻿<Window x:Class="Farmacia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Farmacia"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Background="Aquamarine">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Label FontSize="30" HorizontalAlignment="Center" Grid.Column="1" Margin="10,0,-281,0" Grid.RowSpan="4" Width="328" FontWeight="Bold" FontStyle="Italic">Mi Pequeño Enfermito</Label>
+        <Label FontSize="24" HorizontalAlignment="Center" Grid.Column="1" Margin="75,42,-156,-35" Grid.RowSpan="8" FontWeight="Bold">Menu</Label>
+        <Label Grid.Row="7" FontSize="20" Margin="0,36,0,-73">Ventas</Label>
+        <Button Grid.Row="7" Grid.Column="1" x:Name="btnVentas" Click="btnVentas_Click" Margin="62,36,-292,-73">Nueva Venta</Button>
+        <Label Grid.Row="7" FontSize="20" Margin="0,74,0,-111">Productos</Label>
+        <Button Grid.Row="7" Grid.Column="1" x:Name="btnCategorias" Click="btnCategorias_Click" Margin="62,74,-292,-111">Agregar Producto</Button>
+        <Label Grid.Row="7" FontSize="20" Margin="0,112,0,-149">Empleados</Label>
+        <Button Grid.Row="7" Grid.Column="1" x:Name="btnEmpleados" Click="btnEmpleados_Click" Margin="62,112,-292,-149">Modificar Empleados</Button>
+        <Label Grid.Row="7" FontSize="20" Margin="0,150,0,-187">Clientes</Label>
+        <Button Grid.Row="4" Grid.Column="1" x:Name="btnClientes" Click="btnClientes_Click" Margin="62,150,-292,-175">Agregar Cliente</Button>
+    </Grid>
+</Window>
